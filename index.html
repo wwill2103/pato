@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pato</title>
+    <style>
+        body{
+background-color: black;
+        }
+    </style>
+</head>
+<body>
+<img src="pato.png">
+<button id="botao">NÃO CLIQUE!</button>
+<audio src="quack.mp3" id="audio"></audio>
+<script>
+const botao = document.getElementById('botao');
+var audio = document.getElementById("audio");
+botao.addEventListener('click', function() {
+audio.volume = 0.300; 
+audio.play();
+});
+</script>
+</body>
+</html>
